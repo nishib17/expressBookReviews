@@ -148,6 +148,6 @@ public_users.get('/title/:title',async (req, res) => {
 //  Get book review
 public_users.get('/review/:isbn',async (req, res) => {
   const isbn = req.params.isbn;
-    await res.send(JSON.stringify(books[isbn].review),null,4);
+    await res.send(JSON.stringify(books[isbn].reviews),null,4);
 });
 module.exports.general = public_users;
